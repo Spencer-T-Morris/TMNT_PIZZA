@@ -65,7 +65,8 @@ let menu = [
         id: 7,
         name: "The Making of Metalhead",
         price: 10,
-        topping: "Tea, Toast"
+        topping: "Tea, Toast",
+        quantity: 0
     }
 ];
 

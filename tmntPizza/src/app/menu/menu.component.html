@@ -4,3 +4,10 @@
 <button (click)="showCart()">shopping cart icon</button>
 <app-shopping-cart *ngIf="showShoppingCart" ></app-shopping-cart>
 
+    <div class = "detail">
+        <a routerLink="/menuDetail" routerLinkActive="active">
+            <img src = "../../assets/images/pizza.png">
+        </a>
+    </div>
+
+    <router-outlet></router-outlet>

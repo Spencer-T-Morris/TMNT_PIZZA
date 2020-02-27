@@ -13,6 +13,7 @@ export class MenuComponent implements OnInit {
   
   menu : MenuItem[] = []
   showShoppingCart=false
+  showMenu = true
   ngOnInit() {
     this.getMenu()
   }
@@ -23,6 +24,7 @@ export class MenuComponent implements OnInit {
     });
   }
   showCart(){
-    this.showShoppingCart= !this.showShoppingCart
+    this.showShoppingCart= !this.showShoppingCart;
+    this.showMenu =!this.showMenu;
   }
 }

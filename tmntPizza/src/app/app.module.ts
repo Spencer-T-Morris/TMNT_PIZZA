@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ShoppingCartDetailsComponent } from './shopping-cart-details/shopping-cart-details.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     MenuComponent,
     MenuDetailComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ShoppingCartDetailsComponent
   ],
   imports: [
     BrowserModule,

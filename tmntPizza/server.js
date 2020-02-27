@@ -14,8 +14,8 @@ let menu = [
     {
         name: "Beneath These Streets",
         price: 9,
-        topping: "granola, and licorice"
-
+        topping: "granola, and licorice",
+        quantity: 0
     }
 ]
 

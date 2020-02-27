@@ -1,9 +1,13 @@
-.box{
+.parent{
+    display: flex;
     border-style: solid;
     border-width: 2px;
     border-color: #ED1C24;
+}
+.box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 2;
 }

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {MenuAPIService} from '../menu-api.service'
+import { MenuItem } from '../menu-item';
 
 @Component({
   selector: 'app-menu',
@@ -9,13 +10,14 @@ import {MenuAPIService} from '../menu-api.service'
 export class MenuComponent implements OnInit {
 
   constructor(public service: MenuAPIService) { }
-  menu : any[] = []
+  
+  menu : MenuItem[] = []
   showShoppingCart=false
   ngOnInit() {
     this.getMenu()
   }
   getMenu() {
-    this.service.getMenu().subscribe( (menu : any) => {
+    this.service.getMenu().subscribe( (menu : MenuItem[]) => {
       console.log(menu);
       this.menu = menu;
     });

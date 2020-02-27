@@ -15,4 +15,12 @@ export class MenuAPIService {
         { responseType: "json"}
       );
   }
+
+  itemUpdate(quantity) {
+    return this.http
+      .put("http://localhost:3000/pizza/:id",
+      {menu: quantity},
+      {responseType: "json"}
+      );
+  }
 }

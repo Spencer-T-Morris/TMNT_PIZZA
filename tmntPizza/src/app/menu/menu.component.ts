@@ -10,7 +10,7 @@ export class MenuComponent implements OnInit {
 
   constructor(public service: MenuAPIService) { }
   menu : any[] = []
-
+  showShoppingCart=false
   ngOnInit() {
     this.getMenu()
   }
@@ -20,5 +20,7 @@ export class MenuComponent implements OnInit {
       this.menu = menu;
     });
   }
-
+  showCart(){
+    this.showShoppingCart= !this.showShoppingCart
+  }
 }

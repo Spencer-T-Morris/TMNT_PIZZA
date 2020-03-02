@@ -12,7 +12,5 @@ pizzaCart: MenuItem[]
 
   ngOnInit() {
   }
-  addPizz(){
-    this.pizzaCart.pop
-  }
+  
 }

@@ -16,7 +16,7 @@ import { ShoppingCartDetailsComponent } from './shopping-cart-details/shopping-c
     MenuComponent,
     MenuDetailComponent,
     ShoppingCartComponent,
-    ShoppingCartDetailsComponent
+    ShoppingCartDetailsComponent,
   ],
   imports: [
     BrowserModule,

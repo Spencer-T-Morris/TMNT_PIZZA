@@ -9,9 +9,10 @@ import { MenuItem } from '../menu-item';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(public service: MenuAPIService) { }
+  constructor(public service: MenuAPIService) { 
+  }
   
-  menu : MenuItem[] = []
+  menu : MenuItem[]= [];
   showShoppingCart=false
   showMenu = true
   ngOnInit() {

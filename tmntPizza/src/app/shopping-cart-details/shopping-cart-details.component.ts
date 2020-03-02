@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ShareDataService } from '../share-data.service';
+import { MenuItem } from '../menu-item';
 
 @Component({
   selector: 'app-shopping-cart-details',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-cart-details.component.css']
 })
 export class ShoppingCartDetailsComponent implements OnInit {
-
-  constructor() { }
+  pizzaCart: MenuItem[];
+  constructor(private share: ShareDataService) {  this.share.currentData.subscribe((data: any) => this.pizzaCart = data)}
 
   ngOnInit() {
   }
 
+  deleteFromCart(pizzaCart: MenuItem) {
+    var index = this.pizzaCart.indexOf(pizzaCart);
+    this.pizzaCart.splice(index, 1); 
+  };
+
+  submit() {
+    this.pizzaCart.length = 0;
+  }
 }
